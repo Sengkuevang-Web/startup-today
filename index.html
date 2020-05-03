@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<div class="menu">
+		<ul style="text-align:">
+			<li><a href="index.html">Home</a></li>
+			<li><a>Imformation</a>
+			  <ul>
+				<li><a href="_html/should know.html">should know when we are in University</a></li>
+				<li><a href="_html/14 method.html">14 method improd our Englis skill</a></li>
+				<li><a href="###">technic set time</a></li>
+				<li><a href="###"></li>
+			  </ul>
+			</li>
+			<li><a href="_html/video.html">Video</a>
+
+			<li><a href="###">picture</a></li>
+			<li><a href="_html/register.html">register</a></li>
+			<li><a href="_html/contect.html">contect</a></li>
+		</ul>
+	</li>
+	</div>
+ </header>
+	<tbody><br><br><br><br>
+		<div>
+			<a href="12.html"id="a"  class="list-group-item" >
+              <b><script>
+                    today=new Date();
+                    d=today.getDate();
+                    m=today.getMonth()+1;
+                    y=today.getFullYear();
+                    document.write("ມື້ນີ້ວັນທີ: "+d+"/"+m+"/"+y+"<br>");
+                </script></b><b>
+            		<script>
+            		 today=new Date();
+            		 week=today.getDay();
+            		 days=new Array("ວັນ:ອາທິດ","ວັນ:ຈັນ","ວັນ:ອັງຄານ","ວັນ:ພຸດ","ວັນ:ພະຫັດ","ວັນ:ສຸກ","ວັນ:ເສົາ");
+            		 document.write(days[week]);
+            	 </script></b><p style=background:pink; font-family:saysettha ot;>
+              <b> <script>
+                      function display(){
+                        var time=new Date();
+                        var h=time.getHours();
+                        var m=time.getMinutes();
+                        var s=time.getSeconds();
+                        var tt="ເວລາ:"+((h>12)? h-12:h);
+                            tt+=((m<10)? " :0" : ":")+m;
+                            tt+=((s<10)? " :0" : ":")+s;
+                            tt+=(h>=12)? " PM" : " AM";
+                            document.time.clock.value=tt;
+                            id=setTimeout("display()",1000);
+                      }
+                   </script></b></p>
+            <body onLoad="display()">
+                <form name="time">
+                  <input type="text" name="clock">
+                </form>
+              </body>
+                  </a>
+		</div>
+	</tbody>
+</body>
+</html>
